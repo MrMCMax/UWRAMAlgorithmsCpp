@@ -1,0 +1,11 @@
+int _mm_cvtsi128_si32 (__m128i a): Get lower int
+
+__m512i _mm512_permutexvar_epi32 (__m512i idx, __m512i a): Literally the shuffle operation from the TFM
+
+__m512i _mm512_set1_epi32 (int a): Copy to all places
+
+__m512i _mm512_castsi128_si512 (__m128i a): From 128 to 512 (no ops, higher bits undefined)
+
+__m128i _mm512_castsi512_si128 (__m512i a): From 512 to 128 (no ops)
+
+__m128i _mm_cvtsi32_si128 (int a): Copy "a" to lower 32 bits, the rest bits up to 128 are zero.
